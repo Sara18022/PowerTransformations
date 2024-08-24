@@ -1,4 +1,6 @@
 # Normalizacija podataka stepenim transformacijama: Box-Cox  i Yeo-Johnson 
+
+### Sara Živković 1071/2023
 U ovom projektu istražujemo tehnike normalizacije podataka kroz primenu stepenih transformacija, sa fokusom na Box-Cox i Yeo-Johnson metode. 
 
 Normalizacija podataka je ključna za pripremu podataka za analizu i modelovanje, jer omogućava da se podaci prilagode pretpostavkama koje su neophodne za mnoge statističke metode i algoritme mašinskog učenja. Ovaj proces je naročito važan danas, kada tačnost i efikasnost analiza, baziranih na modelima masinskog ucenja, igraju ključnu ulogu u donošenju odluka.
@@ -45,5 +47,7 @@ It is important to note that the Box-Cox transformation is not intended to norma
 A Box cox transformation is defined as a way to transform non-normal dependent variables in our data to a normal shape through which we can run a lot more tests than we could have
 
 # Literatura
-
-# Sara Živković 1071/2023
+- Osborne, Jason (2010). Improving your data transformations: Applying the Box-Cox transformation. Practical
+Assessment, Research & Evaluation, 15(12)
+- Osborne, J. W. (2002). Notes on the use of data transformations. Practical Assessment, Research, and Evaluation, 8
+- https://medium.com/@vineet.pandya/test-of-normality-box-cox-transformation-in-details-c4bdfc2c352a
