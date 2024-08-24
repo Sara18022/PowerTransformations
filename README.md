@@ -5,7 +5,14 @@ Normalizacija podataka je ključna za pripremu podataka za analizu i modelovanje
 
 Poseban naglasak stavljamo na primere primene Box-Cox i Yeo-Johnson transformacija. Pružićemo konkretne primere kako se ove transformacije primenjuju na različite skupove podataka i uporediti njihove efekte na distribuciju podataka. Diskutovaćemo prednosti i ograničenja svakog pristupa, kao i situacije u kojima su određene transformacije posebno korisne.
 
+## Zašto je transformacija podataka neophodna?
+Transformacije podataka igraju ključnu ulogu u statističkoj analizi i mašinskom učenju time što osiguravaju da podaci ispunjavaju pretpostavke potrebne za različite modele. Možemo unaprediti interpretaciju naših modela, smanjiti uticaj ekstremnih vrednosti i obezbediti pouzdaniju i robusniju analizu, što vodi do boljeg donošenja odluka i dubljih uvida.
+
+
+Ovi procesi su neophodni za ispunjavanje pretpostavki mnogih statističkih modela, kao što su normalna raspodela i homoskedastičnost, koji su često potrebni za tačnu analizu. Primenom različitih matematičkih funkcija — od dodavanja konstanti, kvadratnih korena i logaritamskih konverzija do složenijih trigonometrijskih transformacija — podaci se mogu prilagoditi ovim pretpostavkama, čime se povećava efekat analiza i pouzdanost rezultata.
+
 ## Normalizacija podataka (normalna raspodela)
+## Kako da znamo da naš uzorak nema normalnu raspodelu? - tu ide referenca na zadatak
 Normalization is the process of scaling in respect to the entire data range so that the data has a range from 0 to 1.
 
 In machine learning, data normalization is a common technique used to preprocess data before training a model. The goal is to transform the data in a way that improves the performance and accuracy of the model.
@@ -23,10 +30,11 @@ due to experimental artifacts (noises).  (https://www.researchgate.net/publicati
 
 variance - refers to how much is the data varying with respect to the mean
 
-# Stepene transformacije - uvod
+## Stepene transformacije - uvod
 
 
-# Box-Cox transformacija
+## Box-Cox transformacija
+## TU moye da ide i poredjenje Box'Cox sa drugim transformacijama
 The Box-Cox transformation (Box & Cox, 1964) represents a family of power transformations that incorporates and
 extends the traditional options to help researchers easily find the optimal normalizing transformation
 for each variable. Box-Cox represents a potential best practice where normalizing data or
@@ -35,5 +43,7 @@ The Box-Cox transformation is a type of power transformation, but other powers c
 It is important to note that the Box-Cox transformation is not intended to normalize the distribution of the data to a Gaussian (normal) distribution, but rather to transform the data to a distribution that is closer to normality.
 
 A Box cox transformation is defined as a way to transform non-normal dependent variables in our data to a normal shape through which we can run a lot more tests than we could have
-https://www.geeksforgeeks.org/box-cox-transformation-using-python/
 
+# Literatura
+
+# Sara Živković 1071/2023
