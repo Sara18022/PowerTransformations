@@ -1,11 +1,10 @@
-## Normalizacija podataka stepenim transformacijama: Box-Cox  i Yeo-Johnson 
-This repository provides implementations and examples of data normalization techniques using power transformations. It includes code and documentation for applying Box-Cox and Yeo-Johnson transformations to normalize data, along with practical use cases and applications.
+# Normalizacija podataka stepenim transformacijama: Box-Cox  i Yeo-Johnson 
+U ovom projektu istražujemo tehnike normalizacije podataka kroz primenu stepenih transformacija, sa fokusom na Box-Cox i Yeo-Johnson metode. 
+Normalizacija podataka je ključna za pripremu podataka za analizu i modelovanje, jer omogućava da se podaci prilagode pretpostavkama koje su neophodne za mnoge statističke metode i algoritme mašinskog učenja. Ovaj proces je naročito važan danas, kada tačnost i efikasnost analiza, baziranih na modelima masinskog ucenja, igraju ključnu ulogu u donošenju odluka.
 
-# Transformacija podataka
-To je metod koji koristimo da modelu koji treniramo damo podatke u sto boljem formatu, kako bi se moć modela povećala.
+Poseban naglasak stavljamo na primere primene Box-Cox i Yeo-Johnson transformacija. Pružićemo konkretne primere kako se ove transformacije primenjuju na različite skupove podataka i uporediti njihove efekte na distribuciju podataka. Diskutovaćemo prednosti i ograničenja svakog pristupa, kao i situacije u kojima su određene transformacije posebno korisne.
 
-
-# Normalizacija podataka (normalna raspodela)
+## Normalizacija podataka (normalna raspodela)
 Normalization is the process of scaling in respect to the entire data range so that the data has a range from 0 to 1.
 
 In machine learning, data normalization is a common technique used to preprocess data before training a model. The goal is to transform the data in a way that improves the performance and accuracy of the model.
