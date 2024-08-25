@@ -1,6 +1,7 @@
 # Normalizacija podataka stepenim transformacijama: Box-Cox  i Yeo-Johnson 
 
 ### Sara Živković 1071/2023
+
 U ovom projektu istražujemo tehnike normalizacije podataka kroz primenu stepenih transformacija, sa fokusom na Box-Cox i Yeo-Johnson metode. 
 
 Normalizacija podataka je ključna za pripremu podataka za analizu i modelovanje, jer omogućava da se podaci prilagode pretpostavkama koje su neophodne za mnoge statističke metode i algoritme mašinskog učenja. Ovaj proces je naročito važan danas, kada tačnost i efikasnost analiza, baziranih na modelima masinskog ucenja, igraju ključnu ulogu u donošenju odluka.
@@ -8,17 +9,27 @@ Normalizacija podataka je ključna za pripremu podataka za analizu i modelovanje
 Poseban naglasak stavljamo na primere primene Box-Cox i Yeo-Johnson transformacija. Pružićemo konkretne primere kako se ove transformacije primenjuju na različite skupove podataka i uporediti njihove efekte na distribuciju podataka. Diskutovaćemo prednosti i ograničenja svakog pristupa, kao i situacije u kojima su određene transformacije posebno korisne.
 
 ## Zašto je transformacija podataka neophodna?
-Transformacije podataka igraju ključnu ulogu u statističkoj analizi i mašinskom učenju time što osiguravaju da podaci ispunjavaju pretpostavke potrebne za različite modele. Možemo unaprediti interpretaciju naših modela, smanjiti uticaj ekstremnih vrednosti i obezbediti pouzdaniju i robusniju analizu, što vodi do boljeg donošenja odluka i dubljih uvida.
+Transformacije podataka predstavljaju ključne korake u pripremi podataka za analizu i modeliranje. One omogućavaju prilagođavanje podataka tako da bolje odgovaraju zahtevima modela, poboljšavajući time njihovu tačnost i pouzdanost. Ove transformacije ne samo da osiguravaju da podaci ispunjavaju potrebne pretpostavke, već i olakšavaju interpretaciju rezultata, smanjujući uticaj ekstremnih vrednosti. Kroz pažljivo oblikovanje podataka, transformacije omogućavaju izgradnju modela koji donose bolje odluke i pouzdanije uvide.
 
 
-Ovi procesi su neophodni za ispunjavanje pretpostavki mnogih statističkih modela, kao što su normalna raspodela i homoskedastičnost, koji su često potrebni za tačnu analizu. Primenom različitih matematičkih funkcija — od dodavanja konstanti, kvadratnih korena i logaritamskih konverzija do složenijih trigonometrijskih transformacija — podaci se mogu prilagoditi ovim pretpostavkama, čime se povećava efekat analiza i pouzdanost rezultata.
+## Stepene transformacije i normalizacija podataka
+Posebno mesto među transformacijama zauzimaju stepene transformacije, kao što su Box-Cox i Yeo-Johnson. Ove transformacije su posebno važne kada se radi sa podacima koji su asimetrični (raspodela vrednosti nije simetrična), jer pomažu u stabilizaciji varijanse[^1], približavajući podatke normalnoj raspodeli. Pravilna primena ovih transformacija može značajno poboljšati performanse modela i omogućiti preciznije analize. Zašto?  
 
-## Normalizacija podataka (normalna raspodela)
+Pa, mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasuđivanje. Želimo da model "vidi" celokupnu sliku, a ne samo njen deo. Zbog toga je potrebno prilagoditi podatke i pravilno ih predstaviti modelu za učenje.
+
+
+Za statističke analize i modele mašinskog učenja, podaci koji su približno normalno raspodeljeni sa homogenom varijansom često daju pouzdanije rezultate. Normalna raspodela omogućava da se preciznije predvide budući ishodi, dok stabilizovana varijansa osigurava konzistentnost modela. Kada podaci odstupaju od normalne raspodele ili imaju različitu varijansu kroz opseg, može doći do problema kao što su nepravilna predviđanja, povećan rizik od grešaka u zaključivanju i smanjenje pouzdanosti modela. 
+
+[^1]: Varijansa je statistička mera koja opisuje koliko su vrednosti u jednom skupu podataka rasprostranjene oko srednje vrednosti (aritmetičke sredine) tog skupa, pokazuje koliko su pojedinačne vrednosti u proseku udaljene od srednje vrednosti.
+
 ## Kako da znamo da naš uzorak nema normalnu raspodelu? - tu ide referenca na zadatak 01
 
 
-## Stepene transformacije
+
 ## Box-Cox transformacija
+When λ=0, the transformation simplifies to the natural logarithm of y. The choice of λ is crucial, and it is typically determined through optimization techniques to maximize the goodness of fit or log-likelihood.
+
+The Box-Cox transformation is a generalization that includes square root, logarithmic, and reciprocal transformations as special cases.
 ## Yeo-Johnson
 ### Tu bih stavila referencu na dokument 02 gde imamo poredjenje ovih transformacija sa nekim od stepenih
 
