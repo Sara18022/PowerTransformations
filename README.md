@@ -22,6 +22,8 @@ Za statističke analize i modele mašinskog učenja, podaci koji su približno n
 
 [^1]: Varijansa je statistička mera koja opisuje koliko su vrednosti u jednom skupu podataka rasprostranjene oko srednje vrednosti (aritmetičke sredine) tog skupa, pokazuje koliko su pojedinačne vrednosti u proseku udaljene od srednje vrednosti.
 
+Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nastavku ćemo se baviti njima, a u [folderu](./02_data_transformations/) možemo videti kako se gorepomenute stepene transformacije porede sa njima.
+
 ## Kako da znamo da naš uzorak nema normalnu raspodelu? - tu ide referenca na zadatak 01
 
 
@@ -31,7 +33,7 @@ When λ=0, the transformation simplifies to the natural logarithm of y. The choi
 
 The Box-Cox transformation is a generalization that includes square root, logarithmic, and reciprocal transformations as special cases.
 ## Yeo-Johnson
-### Tu bih stavila referencu na dokument 02 gde imamo poredjenje ovih transformacija sa nekim od stepenih
+
 
 # Literatura
 - Osborne, Jason (2010). Improving your data transformations: Applying the Box-Cox transformation. Practical
