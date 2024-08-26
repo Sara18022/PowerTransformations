@@ -13,7 +13,7 @@ Transformacije podataka predstavljaju ključne korake u pripremi podataka za ana
 
 
 ## Stepene transformacije i normalizacija podataka
-Stepenaste transformacije, kao što su Box-Cox i Yeo-Johnson transformacije, su ključne tehnike u procesu normalizacije podataka, posebno kada se radi sa podacima koji su asimetrični (raspodela vrednosti nije simetrična), jer pomažu u stabilizaciji varijanse[^1], približavajući podatke normalnoj raspodeli. Za statističke analize i modele mašinskog učenja, podaci koji su približno normalno raspodeljeni sa homogenom varijansom često daju pouzdanije rezultate i poboljšavaju performanse modela. Zašto?  
+Stepene transformacije su porodica funkcija koja se koristi za monotone transformacije podataka primenom stepenih funkcija - korenovanja, logaritam, inverzna funkcija... Transformacije, kao što su Box-Cox i Yeo-Johnson transformacije, su ključne tehnike u procesu normalizacije podataka, posebno kada se radi sa podacima koji su asimetrični (raspodela vrednosti nije simetrična), jer pomažu u stabilizaciji varijanse[^1], približavajući podatke normalnoj raspodeli - proces normalizacije podataka. Za statističke analize i modele mašinskog učenja, podaci koji su približno normalno raspodeljeni sa homogenom varijansom često daju pouzdanije rezultate i poboljšavaju performanse modela. Zašto?  
 
 Pa, mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasuđivanje. Mi želimo da model "vidi" celokupnu sliku, a ne samo njen deo. Zbog toga je potrebno prilagoditi podatke i pravilno ih predstaviti modelu za učenje.
 
@@ -21,7 +21,7 @@ Pa, mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasu
 
 **Kako da znamo da naš uzorak nema normalnu raspodelu?** U [primeru](01_normality_test.ipynb) se nalazi detaljniji opis ovog problema.
 
-Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nastavku ćemo se baviti njima, a u [primeru](data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede sa njima.
+Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nastavku ćemo se baviti njima, a u [primeru](04_data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede sa njima.
 
 ## Box-Cox transformacija
 When λ=0, the transformation simplifies to the natural logarithm of y. The choice of λ is crucial, and it is typically determined through optimization techniques to maximize the goodness of fit or log-likelihood.
@@ -52,3 +52,4 @@ Assessment, Research & Evaluation, 15(12)
 - https://medium.com/@vineet.pandya/test-of-normality-box-cox-transformation-in-details-c4bdfc2c352a
 - J. Rico (2021) Normality Tests, p-values, and data normalization with Python.
 [Source code](https://github.com/jvirico/normality-tests-pvalues-boxcoxtransformations)
+-  Li, Fengfei (April 11, 2005), Box–Cox Transformations: An Overview (PDF) (slide presentation), Sao Paulo, Brazil: University of Sao Paulo, Brazil, retrieved 2014-11-02
