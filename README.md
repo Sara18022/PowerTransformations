@@ -8,6 +8,8 @@ Normalizacija podataka je ključna za pripremu podataka za analizu i modelovanje
 
 Poseban naglasak stavljamo na primere primene Box-Cox i Yeo-Johnson transformacija. Pružićemo konkretne primere kako se ove transformacije primenjuju na različite skupove podataka i uporediti njihove efekte na distribuciju podataka. Diskutovaćemo prednosti i ograničenja svakog pristupa, kao i situacije u kojima su određene transformacije posebno korisne.
 
+Pre nego što pređemo na proučavanje normalizacije podataka, važno je da se upoznamo sa osnovnim pojmovima vezanim za normalnu raspodelu. [Link](00_normal_distribution.ipynb) do Jupyter sveske.
+
 ## Zašto je transformacija podataka neophodna?
 Transformacije podataka predstavljaju ključne korake u pripremi podataka za analizu i modeliranje. One omogućavaju prilagođavanje podataka tako da bolje odgovaraju zahtevima modela, poboljšavajući time njihovu tačnost i pouzdanost. Ove transformacije ne samo da osiguravaju da podaci ispunjavaju potrebne pretpostavke, već i olakšavaju interpretaciju rezultata, smanjujući uticaj ekstremnih vrednosti. Kroz pažljivo oblikovanje podataka, transformacije omogućavaju izgradnju modela koji donose bolje odluke i pouzdanije uvide.
 
