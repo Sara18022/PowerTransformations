@@ -26,23 +26,8 @@ Pa, mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasu
 Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nastavku ćemo se baviti njima, a u [primeru](04_data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede sa njima.
 
 ## Box-Cox transformacija
-When λ=0, the transformation simplifies to the natural logarithm of y. The choice of λ is crucial, and it is typically determined through optimization techniques to maximize the goodness of fit or log-likelihood.
-
-The Box-Cox transformation is a generalization that includes square root, logarithmic, and reciprocal transformations as special cases.
-
-Box-Cox transformacija je stepenasta transformacija koja koristi parametar lambda (λ) da prilagodi raspodelu podataka. Različite vrednosti lambda omogućavaju različite transformacije, što može pomoći u normalizaciji podataka. Evo nekoliko ključnih vrednosti lambda i njihovih efekata:
-
-    λ = 1: Kada je lambda jednaka 1, transformacija se ne primenjuje i podaci ostaju nepromenjeni. Ova vrednost funkcioniše kao identitetna transformacija i koristi se kada podaci već zadovoljavaju pretpostavke normalne raspodele.
-
-    λ = 0: Kada je lambda jednaka 0, koristi se logaritamska transformacija (log(x)). Ovo je korisno za smanjenje asimetrije kod podataka sa desno-skewed distribucijom i može pomoći u stabilizaciji varijanse.
-
-    λ = 0.5: Ova vrednost odgovara kvadratnom korenu (sqrt(x)). Korenski transformacije često se koriste kada podaci pokazuju blagu skevnost, jer mogu pomoći u postizanju normalnijeg oblika raspodele.
-
-    λ = -1: Inverzna transformacija (1/x) koristi se kada podaci imaju jako desno-skewed distribuciju. Ovo može biti korisno za drastično ispravljanje jakih asimetrija u podacima.
-
-    λ = -0.5: Koristi se kvadratni koren recipročne vrednosti (1/sqrt(x)). Ova transformacija može biti korisna za modifikaciju podataka koji su izraženi u velikom opsegu vrednosti i imaju naglu asimetriju.
-
-Izbor odgovarajuće vrednosti lambda zavisi od prirode podataka i ciljeva analize. Eksperimentisanjem sa različitim vrednostima lambda možemo postići bolje usklađivanje podataka sa pretpostavkama statističkih modela, što poboljšava tačnost i pouzdanost analiza.
+https://www.datanovia.com/en/lessons/transform-data-to-normal-distribution-in-r/#google_vignette
+https://github.com/JoaquinAmatRodrigo/Estadistica-machine-learning-python/tree/master/data
 
 ## Yeo-Johnson
 
@@ -55,3 +40,4 @@ Assessment, Research & Evaluation, 15(12)
 - J. Rico (2021) Normality Tests, p-values, and data normalization with Python.
 [Source code](https://github.com/jvirico/normality-tests-pvalues-boxcoxtransformations)
 -  Li, Fengfei (April 11, 2005), Box–Cox Transformations: An Overview (PDF) (slide presentation), Sao Paulo, Brazil: University of Sao Paulo, Brazil, retrieved 2014-11-02
+- https://github.com/JoaquinAmatRodrigo/Estadistica-machine-learning-python/tree/master/data
