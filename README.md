@@ -2,7 +2,7 @@
 
 ### Sara Živković 1071/2023
 
-U ovom projektu istražujemo tehnike normalizacije podataka kroz primenu stepenih transformacija, sa fokusom na Box-Cox i Yeo-Johnson metode. 
+U ovom projektu istražujemo tehnike normalizacije podataka (zavisnih promenljivih[^2]) kroz primenu stepenih transformacija, sa fokusom na Box-Cox i Yeo-Johnson metode. 
 
 Normalizacija podataka je ključna za pripremu podataka za analizu i modelovanje, jer omogućava da se podaci prilagode pretpostavkama koje su neophodne za mnoge statističke metode i algoritme mašinskog učenja. Ovaj proces je naročito važan danas, kada tačnost i efikasnost analiza, baziranih na modelima masinskog ucenja, igraju ključnu ulogu u donošenju odluka.
 
@@ -21,14 +21,28 @@ Pa, mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasu
 
 [^1]: Varijansa je statistička mera koja opisuje koliko su vrednosti u jednom skupu podataka rasprostranjene oko srednje vrednosti (aritmetičke sredine) tog skupa, odnosno pokazuje koliko su pojedinačne vrednosti u proseku udaljene od srednje vrednosti.
 
+[^2] Ciljna promenljiva ili zavisna promenljiva je promenljiva koju pokušavamo da predvidimo ili objasnite u analizi podataka ili modelu mašinskog učenja. Ciljna promenljiva je ključna za obuku modela jer se model trenira tako da minimizuje grešku u predviđanju ove promenljive. 
+
 **Kako da znamo da naš uzorak nema normalnu raspodelu?** U [primeru](01_normality_test.ipynb) se nalazi detaljniji opis ovog problema.
 
-Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nastavku ćemo se baviti njima, a u [primeru](04_data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede sa njima.
+Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nastavku ćemo se baviti njima, a u [primeru](04_data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede.
 
 ## Box-Cox transformacija
-https://www.datanovia.com/en/lessons/transform-data-to-normal-distribution-in-r/#google_vignette
-https://github.com/JoaquinAmatRodrigo/Estadistica-machine-learning-python/tree/master/data
 
+### Box-Cox Transformacija
+Transformacija se definiše kao:
+
+\[
+y'(\lambda) = 
+\begin{cases} 
+\frac{y^\lambda - 1}{\lambda} & \text{ako } \lambda \neq 0, \\
+\ln(y) & \text{ako } \lambda = 0.
+\end{cases}
+\]
+
+Optimalna vrednost za \(\lambda\) se često određuje pomoću metode maksimalne verovatnoće (MLE), koja optimizuje normalnost distribucije podataka. 
+
+Primena transformacije i dodatna svojstva: [link](02_box-cox.ipynb).
 ## Yeo-Johnson
 
 
