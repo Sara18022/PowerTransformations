@@ -32,13 +32,13 @@ Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nas
 ### Box-Cox Transformacija
 Transformacija se definiše kao:
 
-\[
+""
 y'(\lambda) = 
 \begin{cases} 
 \frac{y^\lambda - 1}{\lambda} & \text{ako } \lambda \neq 0, \\
 \ln(y) & \text{ako } \lambda = 0.
 \end{cases}
-\]
+""
 
 Optimalna vrednost za \(\lambda\) se često određuje pomoću metode maksimalne verovatnoće (MLE), koja optimizuje normalnost distribucije podataka. 
 
