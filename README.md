@@ -41,19 +41,18 @@ $$
 Primena transformacije i dodatna svojstva: [link](02_box-cox.ipynb).
 
 ## Yeo-Johnson
-This method is very similar to the Box-Cox method, except it doesn't have the restriction that the variable $x$ needs to be positive.
+Za razliku od Box-Cox transformacije, Yeo-Johnson može da obrađuje i pozitivne i negativne vrednosti, što je čini univerzalnom za različite skupove podataka. 
 
-It works by using maximum likelihood estimation to estimate a transformation parameter $\lambda$ in the following equation that would optimize the normality of $x^*$
+Transformacija se definiše kao:
 
 $$
-x' = \left\{
-    \begin{array}{ll}
-      \dfrac{(y + 1) ^ \lambda - 1}{\lambda}              & \lambda \neq 0, y \geq 0 \\
-      \log(y + 1)                                         & \lambda =    0, y \geq 0 \\
-      - \dfrac{(-y + 1) ^ {2 - \lambda} - 1}{2 - \lambda} & \lambda \neq 2, y <    0 \\
-      - \log(-y + 1)                                      & \lambda =    2, y <    0
-    \end{array}
-  \right.
+y'(\lambda) = 
+\begin{cases} 
+\frac{(y + 1)^\lambda - 1}{\lambda} & \text{ako } \lambda \neq 0 \text{ i } y \geq 0, \\
+\frac{-(|y| + 1)^{2 - \lambda} + 1}{2 - \lambda} & \text{ako } \lambda \neq 2 \text{ i } y < 0, \\
+\ln(y + 1) & \text{ako } \lambda = 0 \text{ i } y \geq 0, \\
+-\ln(|y| + 1) & \text{ako } \lambda = 2 \text{ i } y < 0.
+\end{cases}
 $$
 
 # Literatura
