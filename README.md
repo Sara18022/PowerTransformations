@@ -28,9 +28,6 @@ Pa, mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasu
 Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nastavku ćemo se baviti njima, a u [primeru](04_data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede.
 
 ## Box-Cox transformacija
-
-Ova transformacija radi samo sa **pozitivnim** zavisnim promenljivama.
-
 Transformacija se definiše kao:
 
 $$
