@@ -41,7 +41,20 @@ $$
 Primena transformacije i dodatna svojstva: [link](02_box-cox.ipynb).
 
 ## Yeo-Johnson
- TO BE DONE
+This method is very similar to the Box-Cox method, except it doesn't have the restriction that the variable $x$ needs to be positive.
+
+It works by using maximum likelihood estimation to estimate a transformation parameter $\lambda$ in the following equation that would optimize the normality of $x^*$
+
+$$
+x' = \left\{
+    \begin{array}{ll}
+      \dfrac{(y + 1) ^ \lambda - 1}{\lambda}              & \lambda \neq 0, y \geq 0 \\
+      \log(y + 1)                                         & \lambda =    0, y \geq 0 \\
+      - \dfrac{(-y + 1) ^ {2 - \lambda} - 1}{2 - \lambda} & \lambda \neq 2, y <    0 \\
+      - \log(-y + 1)                                      & \lambda =    2, y <    0
+    \end{array}
+  \right.
+$$
 
 # Literatura
 - Osborne, Jason (2010). Improving your data transformations: Applying the Box-Cox transformation. Practical
