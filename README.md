@@ -21,7 +21,7 @@ Pa, mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasu
 
 [^1]: Varijansa je statistička mera koja opisuje koliko su vrednosti u jednom skupu podataka rasprostranjene oko srednje vrednosti (aritmetičke sredine) tog skupa, odnosno pokazuje koliko su pojedinačne vrednosti u proseku udaljene od srednje vrednosti.
 
-[^2] Ciljna promenljiva ili zavisna promenljiva je promenljiva koju pokušavamo da predvidimo ili objasnite u analizi podataka ili modelu mašinskog učenja. Ciljna promenljiva je ključna za obuku modela jer se model trenira tako da minimizuje grešku u predviđanju ove promenljive. 
+[^2]: Ciljna promenljiva ili zavisna promenljiva je promenljiva koju pokušavamo da predvidimo ili objasnite u analizi podataka ili modelu mašinskog učenja. Ciljna promenljiva je ključna za obuku modela jer se model trenira tako da minimizuje grešku u predviđanju ove promenljive. 
 
 **Kako da znamo da naš uzorak nema normalnu raspodelu?** U [primeru](01_normality_test.ipynb) se nalazi detaljniji opis ovog problema.
 
@@ -29,22 +29,22 @@ Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nas
 
 ## Box-Cox transformacija
 
-### Box-Cox Transformacija
+Ova transformacija radi samo sa **pozitivnim** zavisnim promenljivama.
+
 Transformacija se definiše kao:
 
-""
+$$
 y'(\lambda) = 
 \begin{cases} 
 \frac{y^\lambda - 1}{\lambda} & \text{ako } \lambda \neq 0, \\
 \ln(y) & \text{ako } \lambda = 0.
 \end{cases}
-""
-
-Optimalna vrednost za \(\lambda\) se često određuje pomoću metode maksimalne verovatnoće (MLE), koja optimizuje normalnost distribucije podataka. 
+$$
 
 Primena transformacije i dodatna svojstva: [link](02_box-cox.ipynb).
-## Yeo-Johnson
 
+## Yeo-Johnson
+ TO BE DONE
 
 # Literatura
 - Osborne, Jason (2010). Improving your data transformations: Applying the Box-Cox transformation. Practical
