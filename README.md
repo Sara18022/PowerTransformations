@@ -40,7 +40,7 @@ $$
 
 Primena transformacije i dodatna svojstva: [link](02_box-cox.ipynb).
 
-## Yeo-Johnson
+## Yeo-Johnson transformacija
 Za razliku od Box-Cox transformacije, Yeo-Johnson može da obrađuje i pozitivne i negativne vrednosti, što je čini univerzalnom za različite skupove podataka. 
 
 Transformacija se definiše kao:
@@ -55,7 +55,13 @@ y'(\lambda) =
 \end{cases}
 $$
 
+Primena transformacije i dodatna svojstva: [link](02_yeo-johnson.ipynb).
+
+https://stackoverflow.com/questions/68342115/scipy-and-sklearn-yeo-johnson-normalization-results-do-not-match
+
 # Literatura
+- I.K. Yeo and R.A. Johnson, “A new family of power transformations to improve normality or symmetry.” Biometrika, 87(4), pp.954-959, (2000).
+- G.E.P. Box and D.R. Cox, “An Analysis of Transformations”, Journal of the Royal Statistical Society B, 26, 211-252 (1964).
 - Osborne, Jason (2010). Improving your data transformations: Applying the Box-Cox transformation. Practical
 Assessment, Research & Evaluation, 15(12)
 - Osborne, J. W. (2002). Notes on the use of data transformations. Practical Assessment, Research, and Evaluation, 8
