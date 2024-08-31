@@ -25,7 +25,9 @@ Pa, mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasu
 
 **Kako da znamo da naš uzorak nema normalnu raspodelu?** U [primeru](01_normality_test.ipynb) se nalazi detaljniji opis ovog problema.
 
-Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nastavku ćemo se baviti njima, a u [primeru](04_data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede.
+Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nastavku ćemo se baviti njima. Takođe, u [primeru](04_data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede.
+
+Na kraju, na [primeru](05_big_example.ipynb) konstrukcije linearno regresionog modela nad transformisanim i originalnim podacima videćemo pravu moć ovih transformacija u poboljšanju rada modela mašinskog učenja.
 
 ## Box-Cox transformacija
 Transformacija se definiše kao:
@@ -56,8 +58,6 @@ y'(\lambda) =
 $$
 
 Primena transformacije i dodatna svojstva: [link](02_yeo-johnson.ipynb).
-
-Na kraju, na [primeru](05_big_example.ipynb) konstrukcije linerano regresionog modela nad transformisanim i originalnim podacima videćemo pravu moć ovih transformacija u poboljšanju rada modela mašinskog učenja.
 
 # Literatura
 - I.K. Yeo and R.A. Johnson, “A new family of power transformations to improve normality or symmetry.” Biometrika, 87(4), pp.954-959, (2000).
