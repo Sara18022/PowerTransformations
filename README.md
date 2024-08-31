@@ -57,12 +57,12 @@ Primena transformacije i dodatna svojstva: [link](02_yeo-johnson.ipynb).
 
 Na kraju, na [primeru](05_big_example.ipynb) konstrukcije linearno regresionog modela nad transformisanim i originalnim podacima videćemo pravu moć ovih transformacija u poboljšanju rada modela mašinskog učenja.
 
-# Korišćeni skupovi podataka
+## Korišćeni skupovi podataka
 U svakoj Jupiter svesci nalazi se opis korišćenog skupa podataka sa izlistanim bitnim svojsvima.
 
-# Paketi koje je potrebno instalirati
+## Paketi koje je potrebno instalirati
 
-# Literatura
+## Literatura
 - I.K. Yeo and R.A. Johnson, “A new family of power transformations to improve normality or symmetry.” Biometrika, 87(4), pp.954-959, (2000).
 - G.E.P. Box and D.R. Cox, “An Analysis of Transformations”, Journal of the Royal Statistical Society B, 26, 211-252 (1964).
 - Osborne, Jason (2010). Improving your data transformations: Applying the Box-Cox transformation. Practical
