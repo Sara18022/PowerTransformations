@@ -70,3 +70,4 @@ Assessment, Research & Evaluation, 15(12)
 [Source code](https://github.com/jvirico/normality-tests-pvalues-boxcoxtransformations)
 -  Li, Fengfei (April 11, 2005), Box–Cox Transformations: An Overview (PDF) (slide presentation), Sao Paulo, Brazil: University of Sao Paulo, Brazil, retrieved 2014-11-02
 - https://github.com/JoaquinAmatRodrigo/Estadistica-machine-learning-python/tree/master/data
+- https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.yeojohnson.html
