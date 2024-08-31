@@ -2,18 +2,20 @@
 
 ### Sara Živković 1071/2023
 
-U ovom projektu istražujemo tehnike normalizacije podataka (zavisnih promenljivih[^2]) kroz primenu stepenih transformacija, sa fokusom na Box-Cox i Yeo-Johnson metode. 
+U ovom projektu istražujemo tehnike normalizacije podataka (zavisnih promenljivih[^2]) kroz primenu stepenih transformacija, sa fokusom na **Box-Cox i Yeo-Johnson metode**. 
 
-Normalizacija podataka je ključna za pripremu podataka za analizu i modelovanje, jer omogućava da se podaci prilagode pretpostavkama koje su neophodne za mnoge statističke metode i algoritme mašinskog učenja. Ona omogućava prilagođavanje podataka tako da oni bolje odgovaraju zahtevima modela, poboljšavajući time njihovu tačnost i pouzdanost.
+Pre nego što pređemo na proučavanje normalizacije podataka, važno je da se upoznamo sa osnovnim pojmovima vezanim za normalnu raspodelu. [Link](00_normal_distribution.ipynb) do Jupyter sveske.
+
+Normalizacija podataka je ključna za pripremu podataka za analizu i modelovanje, jer omogućava da se podaci prilagode pretpostavkama koje su neophodne za mnoge statističke metode i algoritme mašinskog učenja. Ona omogućava prilagođavanje podataka kako bi oni bolje odgovarali zahtevima modela, poboljšavajući time njihovu tačnost i pouzdanost.
 
 Ovaj proces je naročito važan danas, kada tačnost i efikasnost analiza, baziranih na modelima masinskog ucenja, igraju ključnu ulogu u donošenju odluka.
 
 Pokazaćemo kako se ove transformacije primenjuju na različite skupove podataka i uporediti njihove efekte na raspodelu podataka. Diskutovaćemo prednosti i ograničenja svakog pristupa, kao i situacije u kojima su ove transformacije posebno korisne.
 
-Pre nego što pređemo na proučavanje normalizacije podataka, važno je da se upoznamo sa osnovnim pojmovima vezanim za normalnu raspodelu. [Link](00_normal_distribution.ipynb) do Jupyter sveske.
-
 ## Stepene transformacije i normalizacija podataka
-Stepene transformacije su porodica funkcija koja se koristi za monotone transformacije podataka primenom stepenih funkcija - korenovanje, logaritmovanje, inverzna funkcija... Transformacije, kao što su Box-Cox i Yeo-Johnson transformacije, su ključne tehnike u procesu normalizacije podataka, posebno kada se radi sa podacima koji su asimetrični (raspodela vrednosti nije simetrična), jer pomažu u stabilizaciji varijanse[^1], približavajući podatke normalnoj raspodeli - proces normalizacije podataka. Za statističke analize i modele mašinskog učenja, podaci koji su približno normalno raspodeljeni često daju pouzdanije rezultate i poboljšavaju performanse modela. Mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasuđivanje. Mi želimo da model "vidi" celokupnu sliku, a ne samo njen deo. Zbog toga je potrebno prilagoditi podatke i pravilno ih predstaviti modelu za učenje.
+Stepene transformacije su porodica funkcija koje se koriste za monotone transformacije podataka primenom stepenih funkcija - korenovanje, logaritmovanje, inverzna funkcija... Transformacije, kao što su Box-Cox i Yeo-Johnson, su ključne tehnike u procesu normalizacije podataka, posebno kada se radi sa podacima koji su asimetrični (raspodela vrednosti nije simetrična), jer pomažu u stabilizaciji varijanse[^1], približavajući podatke normalnoj raspodeli - **proces normalizacije podataka**. Za statističke analize i modele mašinskog učenja podaci koji su približno normalno raspodeljeni često daju pouzdanije rezultate i poboljšavaju performanse modela. 
+
+Mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasuđivanje. Mi želimo da model "vidi" celokupnu sliku, a ne samo njen deo. Zbog toga je potrebno prilagoditi podatke i pravilno ih predstaviti modelu za učenje.
 
 [^1]: Varijansa je statistička mera koja opisuje koliko su vrednosti u jednom skupu podataka rasprostranjene oko srednje vrednosti (aritmetičke sredine) tog skupa, odnosno pokazuje koliko su pojedinačne vrednosti u proseku udaljene od srednje vrednosti.
 
@@ -23,7 +25,7 @@ Stepene transformacije su porodica funkcija koja se koristi za monotone transfor
 
 U [primeru](04_data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede međusobno.
 
-Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson  transformacijama, u nastavku ćemo se baviti njima.
+Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson transformacijama, u nastavku ćemo se baviti njima.
 
 ## Box-Cox transformacija
 Transformacija se definiše kao:
@@ -58,9 +60,7 @@ Primena transformacije i dodatna svojstva: [link](02_yeo-johnson.ipynb).
 Na kraju, na [primeru](05_big_example.ipynb) konstrukcije linearno regresionog modela nad transformisanim i originalnim podacima videćemo pravu moć ovih transformacija u poboljšanju rada modela mašinskog učenja.
 
 ## Korišćeni skupovi podataka
-U svakoj Jupiter svesci nalazi se opis korišćenog skupa podataka sa izlistanim bitnim svojsvima.
-
-## Paketi koje je potrebno instalirati
+U svakoj Jupzter svesci nalazi se opis korišćenog skupa podataka sa izlistanim bitnim svojsvima.
 
 ## Literatura
 - I.K. Yeo and R.A. Johnson, “A new family of power transformations to improve normality or symmetry.” Biometrika, 87(4), pp.954-959, (2000).
