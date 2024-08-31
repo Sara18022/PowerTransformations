@@ -57,7 +57,7 @@ $$
 
 Primena transformacije i dodatna svojstva: [link](02_yeo-johnson.ipynb).
 
-https://stackoverflow.com/questions/68342115/scipy-and-sklearn-yeo-johnson-normalization-results-do-not-match
+Na kraju, na [primeru](05_big_example.ipynb) konstrukcije linerano regresionog modela nad transformisanim i originalnim podacima videćemo pravu moć ovih transformacija u poboljšanju rada modela mašinskog učenja.
 
 # Literatura
 - I.K. Yeo and R.A. Johnson, “A new family of power transformations to improve normality or symmetry.” Biometrika, 87(4), pp.954-959, (2000).
@@ -71,3 +71,4 @@ Assessment, Research & Evaluation, 15(12)
 -  Li, Fengfei (April 11, 2005), Box–Cox Transformations: An Overview (PDF) (slide presentation), Sao Paulo, Brazil: University of Sao Paulo, Brazil, retrieved 2014-11-02
 - https://github.com/JoaquinAmatRodrigo/Estadistica-machine-learning-python/tree/master/data
 - https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.yeojohnson.html
+- https://www.kaggle.com/datasets/prathamtripathi/regression-with-neural-networking?resource=download
