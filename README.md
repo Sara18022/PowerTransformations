@@ -23,7 +23,7 @@ Mašine uče iz obrazaca, a ekstremne vrednosti mogu poremetiti njihovo rasuđiv
 
 **Kako da znamo da naš uzorak nema normalnu raspodelu?** U [primeru](01_normality_test.ipynb) se nalazi detaljniji opis ovog problema.
 
-Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson transformacijama, u nastavku ćemo se baviti njima, a u[primeru](04_data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede međusobno.
+Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson transformacijama, u nastavku ćemo se baviti njima, a u [primeru](04_data_transformations.ipynb) možemo videti kako se gorepomenute stepene transformacije porede međusobno.
 
 ## Box-Cox transformacija
 Transformacija se definiše kao:
@@ -39,8 +39,6 @@ $$
 Primena transformacije i dodatna svojstva: [link](02_box-cox.ipynb).
 
 ## Yeo-Johnson transformacija
-Za razliku od Box-Cox transformacije, Yeo-Johnson može da obrađuje i pozitivne i negativne vrednosti, što je čini univerzalnom za različite skupove podataka. 
-
 Transformacija se definiše kao:
 
 $$
@@ -53,12 +51,17 @@ y'(\lambda) =
 \end{cases}
 $$
 
+Za razliku od Box-Cox transformacije, Yeo-Johnson može da obrađuje i pozitivne i negativne vrednosti, što je čini univerzalnom za različite skupove podataka. 
+
 Primena transformacije i dodatna svojstva: [link](02_yeo-johnson.ipynb).
+
+_______________________________________________________________________________________________________________
 
 Na kraju, na [primeru](05_big_example.ipynb) konstrukcije linearno regresionog modela nad transformisanim i originalnim podacima videćemo pravu moć ovih transformacija u poboljšanju rada modela mašinskog učenja.
 
 ## Korišćeni skupovi podataka
 Korišćene skupove možete naći u folderu: [data/](data/)
+
 U svakoj Jupyter svesci nalazi se opis korišćenog skupa podataka kao i analiza bitnih svojstava samog skupa.
 
 ## Literatura
