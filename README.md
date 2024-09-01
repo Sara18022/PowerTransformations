@@ -58,7 +58,8 @@ Primena transformacije i dodatna svojstva: [link](02_yeo-johnson.ipynb).
 Na kraju, na [primeru](05_big_example.ipynb) konstrukcije linearno regresionog modela nad transformisanim i originalnim podacima videćemo pravu moć ovih transformacija u poboljšanju rada modela mašinskog učenja.
 
 ## Korišćeni skupovi podataka
-U svakoj Jupzter svesci nalazi se opis korišćenog skupa podataka sa izlistanim bitnim svojsvima.
+Korišćene skupove možete naći u folderu: [data/](data/)
+U svakoj Jupyter svesci nalazi se opis korišćenog skupa podataka kao i analiza bitnih svojstava samog skupa.
 
 ## Literatura
 - I.K. Yeo and R.A. Johnson, “A new family of power transformations to improve normality or symmetry.” Biometrika, 87(4), pp.954-959, (2000).
