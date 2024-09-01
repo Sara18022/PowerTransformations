@@ -57,7 +57,7 @@ Primena transformacije i dodatna svojstva: [link](02_yeo-johnson.ipynb).
 
 _______________________________________________________________________________________________________________
 
-Na kraju, na [primeru](05_big_example.ipynb) konstrukcije linearno regresionog modela nad transformisanim i originalnim podacima videćemo pravu moć ovih transformacija u poboljšanju rada modela mašinskog učenja.
+Na kraju, na malom [primeru](05_big_example.ipynb) konstrukcije linearno regresionog modela nad transformisanim i originalnim podacima videćemo pravu moć ovih transformacija u poboljšanju rada modela mašinskog učenja.
 
 ## Korišćeni skupovi podataka
 Korišćene skupove možete naći u folderu: [data/](data/)
@@ -74,6 +74,7 @@ Assessment, Research & Evaluation, 15(12)
 - J. Rico (2021) Normality Tests, p-values, and data normalization with Python.
 [Source code](https://github.com/jvirico/normality-tests-pvalues-boxcoxtransformations)
 -  Li, Fengfei (April 11, 2005), Box–Cox Transformations: An Overview (PDF) (slide presentation), Sao Paulo, Brazil: University of Sao Paulo, Brazil, retrieved 2014-11-02
+- https://scikit-learn.org/stable/modules/generated/sklearn.preprocessing.PowerTransformer.html
 - https://github.com/JoaquinAmatRodrigo/Estadistica-machine-learning-python/tree/master/data
 - https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.yeojohnson.html
 - https://www.kaggle.com/datasets/prathamtripathi/regression-with-neural-networking?resource=download
