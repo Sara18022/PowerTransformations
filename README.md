@@ -29,10 +29,10 @@ Kako je naš fokus upoznavanje sa Box-Cox i Yeo-Johnson transformacijama, u nast
 Transformacija se definiše kao:
 
 $$
-y'(\lambda) = 
+y(\lambda, x) = 
 \begin{cases} 
-\frac{y^\lambda - 1}{\lambda} & \text{ako } \lambda \neq 0, \\
-\ln(y) & \text{ako } \lambda = 0.
+\frac{x^\lambda - 1}{\lambda} & \text{ako } \lambda \neq 0, \\
+\ln(x) & \text{ako } \lambda = 0.
 \end{cases}
 $$
 
@@ -42,12 +42,12 @@ Primena transformacije i dodatna svojstva: [link](02_box-cox.ipynb).
 Transformacija se definiše kao:
 
 $$
-y'(\lambda) = 
+y(\lambda, x) = 
 \begin{cases} 
-\frac{(y + 1)^\lambda - 1}{\lambda} & \text{ako } \lambda \neq 0 \text{ i } y \geq 0, \\
-\frac{-(|y| + 1)^{2 - \lambda} + 1}{2 - \lambda} & \text{ako } \lambda \neq 2 \text{ i } y < 0, \\
-\ln(y + 1) & \text{ako } \lambda = 0 \text{ i } y \geq 0, \\
--\ln(|y| + 1) & \text{ako } \lambda = 2 \text{ i } y < 0.
+\frac{(x + 1)^\lambda - 1}{\lambda} & \text{ako } \lambda \neq 0 \text{ i } x \geq 0, \\
+\frac{-(-x + 1)^{2 - \lambda} + 1}{2 - \lambda} & \text{ako } \lambda \neq 2 \text{ i } x < 0, \\
+\ln(x + 1) & \text{ako } \lambda = 0 \text{ i } x \geq 0, \\
+-\ln(-x + 1) & \text{ako } \lambda = 2 \text{ i } x < 0.
 \end{cases}
 $$
 
